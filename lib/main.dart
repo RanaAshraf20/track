@@ -6,6 +6,7 @@ import 'package:track/pages/get_your_card.dart';
 import 'package:track/pages/home_page.dart';
 import 'package:track/pages/insights_page.dart';
 import 'package:track/pages/new_trasfer_page.dart';
+import 'package:track/pages/rewards_page.dart';
 import 'package:track/pages/search_page.dart';
 import 'package:track/pages/transfers_page.dart';
 
@@ -31,7 +32,8 @@ class TeldaApp extends StatelessWidget {
       EditCategoriesPage.id: (context) => EditCategoriesPage(),
       BottomSheetPage.id: (context) => BottomSheetPage(),
       HomePage.id: (context) => HomePage(),
-      GetYourCard.id: (context) => GetYourCard()
+      GetYourCard.id: (context) => GetYourCard(),
+      RewardsPage.id: (context) => RewardsPage(),
     }, debugShowCheckedModeBanner: false, home: WelcomeView());
   }
 }

@@ -51,13 +51,16 @@ class CustomCard extends StatelessWidget {
                       Expanded(
                         child: Text(
                           subtitle,
+                          softWrap: true,
                           maxLines: 4,
                           textAlign: TextAlign.start,
                           style: TextStyle(
                             fontFamily: mainFont,
                             overflow: TextOverflow.ellipsis,
                             color: Colors.grey,
-                            fontSize: 16,
+                            fontSize: SizeConfig.screenWidth! / 25 < 15
+                                ? SizeConfig.screenWidth! / 25
+                                : 15,
                             height: 1,
                             fontWeight: FontWeight.bold,
                           ),

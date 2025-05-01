@@ -25,7 +25,6 @@ class GetCashPageAtm extends StatelessWidget {
                 CloseIcon(
                   onTap: () {
                     Navigator.pop(context);
-                    Navigator.pop(context);
                   },
                 ),
               ],
@@ -113,22 +112,38 @@ class GetCashPageAtm extends StatelessWidget {
                   SizedBox(
                     width: 20,
                   ),
-                  Text(
-                    'EGP 5 fee',
-                    style: TextStyle(
-                        decoration: TextDecoration.underline,
-                        fontSize: 16,
-                        fontFamily: mainFont),
-                  ),
-                  Expanded(
-                    child: FittedBox(
-                      child: Text(
-                        ' will be applied',
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(fontSize: 16, fontFamily: mainFont),
+                  Text.rich(
+                    TextSpan(children: [
+                      TextSpan(
+                        text: 'EGP 5 fee',
+                        style: TextStyle(
+                            decoration: TextDecoration.underline,
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: mainFont),
                       ),
-                    ),
+                      TextSpan(
+                        text: ' will be applied',
+                        style: TextStyle(fontSize: 14, fontFamily: mainFont),
+                      )
+                    ]),
                   ),
+                  // Text(
+                  //   'EGP 5 fee',
+                  //   style: TextStyle(
+                  //       decoration: TextDecoration.underline,
+                  //       fontSize: 16,
+                  //       fontFamily: mainFont),
+                  // ),
+                  // Expanded(
+                  //   child: FittedBox(
+                  //     child: Text(
+                  //       ' will be applied',
+                  //       overflow: TextOverflow.ellipsis,
+                  //       style: TextStyle(fontSize: 16, fontFamily: mainFont),
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               ),
             ),

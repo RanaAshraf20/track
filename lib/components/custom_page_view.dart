@@ -42,7 +42,7 @@ class CustomPageView extends StatelessWidget {
           image: 'images/edit.png',
           buttonColor: Colors.black,
           textButtonColor: Colors.black,
-        )
+        ),
       ],
     );
   }

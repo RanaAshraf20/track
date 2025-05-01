@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:track/pages/more_page.dart';
 import 'package:track/pages/referral_page.dart';
+import 'package:track/pages/rewards_page.dart';
 
 import 'custom_more_component.dart';
 
@@ -53,7 +54,9 @@ class CustomRowOfSmallCards extends StatelessWidget {
             image: 'images/rewards.png',
             color: Color(0xffFFDE03).withOpacity(0.2),
             text: 'Rewards',
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, RewardsPage.id);
+            },
           ),
         ),
         Flexible(

@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                   ),
 
                   SizedBox(
-                    height: SizeConfig.screenHeight! * 0.22,
+                    height: 180,
                     child: CustomPageView(
                       controller: _controller,
                       onPageChanged: (index) {

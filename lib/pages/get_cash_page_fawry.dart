@@ -25,7 +25,6 @@ class GetCashPageFawry extends StatelessWidget {
                 CloseIcon(
                   onTap: () {
                     Navigator.pop(context);
-                    Navigator.pop(context);
                   },
                 ),
               ],
@@ -123,43 +122,67 @@ class GetCashPageFawry extends StatelessWidget {
                   SizedBox(
                     width: 20,
                   ),
-                  Expanded(
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            Expanded(
-                              child: FittedBox(
-                                child: Text(
-                                  'EGP 5 fee',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline,
-                                      fontSize: 16,
-                                      fontFamily: mainFont),
-                                ),
-                              ),
-                            ),
-                            Expanded(
-                              child: FittedBox(
-                                child: Text(
-                                  ' will be applied +',
-                                  style: TextStyle(
-                                      fontSize: 16, fontFamily: mainFont),
-                                ),
-                              ),
-                            ),
-                          ],
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text.rich(TextSpan(children: [
+                        TextSpan(
+                          text: 'EGP 5 fee',
+                          style: TextStyle(
+                              decoration: TextDecoration.underline,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700,
+                              fontFamily: mainFont),
                         ),
-                        FittedBox(
-                          child: Text(
-                            'fawry adminstrative fees',
-                            style:
-                                TextStyle(fontSize: 16, fontFamily: mainFont),
-                          ),
-                        ),
-                      ],
-                    ),
+                        TextSpan(
+                          text: ' will be applied +',
+                          style: TextStyle(fontSize: 14, fontFamily: mainFont),
+                        )
+                      ])),
+                      Text(
+                        'fawry adminstrative fees',
+                        style: TextStyle(fontSize: 14, fontFamily: mainFont),
+                      )
+                    ],
                   )
+
+                  // Expanded(
+                  //   child: Column(
+                  //     children: [
+                  //       Row(
+                  //         children: [
+                  //           Expanded(
+                  //             child: FittedBox(
+                  //               child: Text(
+                  //                 'EGP 5 fee',
+                  //                 style: TextStyle(
+                  //                     decoration: TextDecoration.underline,
+                  //                     fontSize: 16,
+                  //                     fontFamily: mainFont),
+                  //               ),
+                  //             ),
+                  //           ),
+                  //           Expanded(
+                  //             child: FittedBox(
+                  //               child: Text(
+                  //                 ' will be applied + ',
+                  //                 style: TextStyle(
+                  //                     fontSize: 16, fontFamily: mainFont),
+                  //               ),
+                  //             ),
+                  //           ),
+                  //         ],
+                  //       ),
+                  //       FittedBox(
+                  //         child: Text(
+                  //           'fawry adminstrative fees',
+                  //           style:
+                  //               TextStyle(fontSize: 16, fontFamily: mainFont),
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // )
                 ],
               ),
             ),
