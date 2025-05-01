@@ -16,7 +16,9 @@ class RewardsPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CloseIcon(),
+            CloseIcon(
+              onTap: Navigator.of(context).pop,
+            ),
             SizedBox(
               height: 20,
             ),
